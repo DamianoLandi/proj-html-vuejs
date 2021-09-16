@@ -36,5 +36,10 @@ body{
     width: 1200px;
     margin: auto;
   }
+
+  .container-small{
+    width: 800px;
+    margin: auto;
+  }
 }
 </style>

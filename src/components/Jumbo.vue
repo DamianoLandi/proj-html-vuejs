@@ -47,5 +47,6 @@ export default {
         padding: 10px 20px;
         text-transform: uppercase;
         font-size: 13px;
+        font-weight: 600;
     }
 </style>
