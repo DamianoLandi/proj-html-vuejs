@@ -50,7 +50,7 @@ export default {
 <style scoped>
     header{
         height: 80px;
-        background-color: #27aabe;
+        background-color: #4A4A4A;
     }
 
     .container{
@@ -82,17 +82,17 @@ export default {
 
     button{
         color: white;
-        background-color: #000;
-        border: 1px solid black;
+        background-color: #202325;
+        border: 1px solid #202325;
         text-transform: uppercase;
-        padding: 5px 10px;
+        padding: 7px 15px;
         cursor: pointer;
     }
 
     .active{
         height: 20px;
         width: 20px;
-        background-color: #27aabe;
+        background-color: #4A4A4A;
         position: absolute;
         transform: rotate(45deg);
         left: 35%;
