@@ -13,7 +13,14 @@
             <div class="container cards-container">
                 <div class="col" v-for="(item, index) in firstNews" :key="index">
                     <NewsCard :item="item"/>
-                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <Featured/>
+            </div>
+            <div class="container cards-container">
+                <div class="col" v-for="(item, index) in secondNews" :key="index">
+                    <NewsCard :item="item"/>
                 </div>
             </div>
         </section>
@@ -24,13 +31,15 @@
 import Jumbo from "./Jumbo.vue"
 import MainText from "./MainText.vue"
 import NewsCard from "./NewsCard.vue"
+import Featured from "./Featured.vue"
 
 export default {
     name: "Footer",
     components:{
         Jumbo,
         MainText,
-        NewsCard
+        NewsCard,
+        Featured
     },
     data(){
         return{
@@ -51,6 +60,29 @@ export default {
                 },
                 {
                     imgUrl: "post_feat_img_23-320x202.jpg",
+                    title: "Morbi vitae dui euismod vulputate sullicitund",
+                    date: "October 11th, 2015",
+                    comments: 0,
+                    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, illo beatae? Voluptates, atque dolorem ut enim beatae vero esse animi impedit, voluptas dignissimos provident iusto libero necessitatibus nihil fuga at!"
+                }
+            ],
+            secondNews:[
+                {
+                    imgUrl: "post_feat_img_22-320x202.jpg",
+                    title: "Morbi vitae dui euismod vulputate sullicitund",
+                    date: "October 11th, 2015",
+                    comments: 0,
+                    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, illo beatae? Voluptates, atque dolorem ut enim beatae vero esse animi impedit, voluptas dignissimos provident iusto libero necessitatibus nihil fuga at!"
+                },
+                {
+                    imgUrl: "post_feat_img_21-320x202.jpg",
+                    title: "Morbi vitae dui euismod vulputate sullicitund",
+                    date: "October 11th, 2015",
+                    comments: 0,
+                    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, illo beatae? Voluptates, atque dolorem ut enim beatae vero esse animi impedit, voluptas dignissimos provident iusto libero necessitatibus nihil fuga at!"
+                },
+                {
+                    imgUrl: "post_feat_img_20-320x202.jpg",
                     title: "Morbi vitae dui euismod vulputate sullicitund",
                     date: "October 11th, 2015",
                     comments: 0,
