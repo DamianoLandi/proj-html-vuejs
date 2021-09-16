@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
     header{
-        height: 100px;
+        height: 80px;
         background-color: #27aabe;
     }
 
