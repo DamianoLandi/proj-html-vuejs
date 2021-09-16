@@ -41,6 +41,21 @@
                 <a href="#">Read our blog &rarr;</a>
             </div>
         </section>
+        <section id="forums">
+            <div class="section-header">
+                <h3>Phasellus eget metus</h3>
+                <h2>Forum Sections</h2>
+                <hr>
+            </div>
+            <div class="container cards-container">
+                <div class="col-3" v-for="(item, index) in forumSections" :key="index">
+                    <ForumCard :item="item"/>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#">Go to our forum &rarr;</a>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -51,6 +66,7 @@ import NewsCard from "./NewsCard.vue"
 import Featured from "./Featured.vue"
 import FeaturedSmall from "./FeaturedSmall.vue"
 import CardSmall from "./CardSmall.vue"
+import ForumCard from "./ForumCard.vue"
 
 export default {
     name: "Footer",
@@ -61,6 +77,7 @@ export default {
         Featured,
         FeaturedSmall,
         CardSmall,
+        ForumCard
     },
     data(){
         return{
@@ -130,6 +147,40 @@ export default {
                     comments: 0,
                 }
             ],
+            forumSections: [
+                {
+                    icon: "fas fa-file-alt",
+                    text: "News & Community"
+                },
+                {
+                    icon: "fab fa-apple",
+                    text: "Apple Forum"
+                },
+                {
+                    icon: "fab fa-windows",
+                    text: "Microsoft Forum"
+                },
+                {
+                    icon: "fab fa-android",
+                    text: "Android Forum"
+                },
+                {
+                    icon: "fas fa-coffee",
+                    text: "General Discussion"
+                },
+                {
+                    icon: "fas fa-cubes",
+                    text: "Apps & Software"
+                },
+                {
+                    icon: "fas fa-laptop",
+                    text: "Gadgets & Stuff"
+                },
+                {
+                    icon: "fas fa-wrench",
+                    text: "Tutorials & Guides"
+                }
+            ]
         }
     }
 }
@@ -169,6 +220,8 @@ hr{
 
 .cards-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .col{
@@ -190,6 +243,10 @@ hr{
     padding: 0 30px;
 }
 
+.col-3{
+    flex-basis: calc(100% / 4);
+}
+
 ul{
     list-style-type: none;
     padding: 0;
@@ -201,6 +258,7 @@ ul{
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-top: 30px;
 }
 
 .section-footer a{
@@ -209,6 +267,12 @@ ul{
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+#forums{
+    margin-top: 0;
+    padding-top: 100px;
+    background-color: #F2F2F2;
 }
 
 </style>
