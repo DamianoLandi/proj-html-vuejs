@@ -30,7 +30,15 @@
                 <div class="col-4">
                     <h2 id="sidebar-header">Tutorials & Guides</h2>
                     <hr id="sidebar-divider">
+                    <ul>
+                        <li v-for="(item, index) in sideNews" :key="index">
+                            <CardSmall :item="item"/>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+            <div class="section-footer">
+                <a href="#">Read our blog &rarr;</a>
             </div>
         </section>
     </main>
@@ -42,6 +50,7 @@ import MainText from "./MainText.vue"
 import NewsCard from "./NewsCard.vue"
 import Featured from "./Featured.vue"
 import FeaturedSmall from "./FeaturedSmall.vue"
+import CardSmall from "./CardSmall.vue"
 
 export default {
     name: "Footer",
@@ -51,6 +60,7 @@ export default {
         NewsCard,
         Featured,
         FeaturedSmall,
+        CardSmall,
     },
     data(){
         return{
@@ -99,7 +109,27 @@ export default {
                     comments: 0,
                     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, illo beatae? Voluptates, atque dolorem ut enim beatae vero esse animi impedit, voluptas dignissimos provident iusto libero necessitatibus nihil fuga at!"
                 }
-            ]
+            ],
+            sideNews:[
+                {
+                    imgUrl: "post_feat_img_23-320x202.jpg",
+                    title: "Morbi vitae dui euismod vulputate sullicitund",
+                    date: "October 11th, 2015",
+                    comments: 2,
+                },
+                {
+                    imgUrl: "post_feat_img_22-320x202.jpg",
+                    title: "Morbi vitae dui euismod vulputate sullicitund",
+                    date: "October 11th, 2015",
+                    comments: 0,
+                },
+                {
+                    imgUrl: "post_feat_img_20-320x202.jpg",
+                    title: "Morbi vitae dui euismod vulputate sullicitund",
+                    date: "October 11th, 2015",
+                    comments: 0,
+                }
+            ],
         }
     }
 }
@@ -158,6 +188,27 @@ hr{
 .col-4{
     flex-basis: calc(100% / 3);
     padding: 0 30px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-footer{
+    background-color: #25A9BD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.section-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 </style>

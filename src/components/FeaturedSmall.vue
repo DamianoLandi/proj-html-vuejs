@@ -16,7 +16,7 @@ export default {
 <style scoped>
     .featured-small{
         background-image: url("../assets/img/featured_article_2_bg.jpg");
-        height: 550px;
+        height: 474px;
         background-position: center;
         background-size: cover;
         color: white;
