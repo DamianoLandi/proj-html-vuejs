@@ -10,7 +10,7 @@
                 <h2>All the latest news</h2>
                 <hr>
             </div>
-            <div class="container">
+            <div class="container cards-container">
                 <div class="col" v-for="(item, index) in firstNews" :key="index">
                     <NewsCard :item="item"/>
                     <img src="" alt="">
@@ -84,6 +84,14 @@ export default {
 hr{
     border-color: #fc8c5e;
     width: 100px;
+}
+
+.cards-container{
+    display: flex;
+}
+
+.col{
+    flex-basis: 33%;
 }
 
 </style>

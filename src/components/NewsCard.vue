@@ -2,8 +2,8 @@
     <div class="card">
         <img :src="require('@/assets/img/' + item.imgUrl)" alt="img">
         <h3>{{item.title}}</h3>
-        <p><span>{{item.date}}</span> | <span v-if="item.comments != 0">{{item.comments}} Comments</span> <span v-else>No Comments</span></p>
-        <p>{{item.text}}</p>
+        <p><span class="text-gray">{{item.date}}</span> | <span v-if="item.comments != 0">{{item.comments}} Comments</span> <span class="text-gray" v-else>No Comments</span></p>
+        <p class="text-gray">{{item.text}}</p>
     </div>
 </template>
 
@@ -18,5 +18,15 @@ export default {
 </script>
 
 <style>
+    .card{
+        padding: 15px;
+    }
 
+    img{
+        width: 100%;
+    }
+
+    .text-gray{
+        color: #62676c;
+    }
 </style>
