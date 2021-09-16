@@ -23,6 +23,15 @@
                     <NewsCard :item="item"/>
                 </div>
             </div>
+            <div class="container row">
+                <div class="col-8">
+                    <FeaturedSmall/>
+                </div>
+                <div class="col-4">
+                    <h2 id="sidebar-header">Tutorials & Guides</h2>
+                    <hr id="sidebar-divider">
+                </div>
+            </div>
         </section>
     </main>
 </template>
@@ -32,6 +41,7 @@ import Jumbo from "./Jumbo.vue"
 import MainText from "./MainText.vue"
 import NewsCard from "./NewsCard.vue"
 import Featured from "./Featured.vue"
+import FeaturedSmall from "./FeaturedSmall.vue"
 
 export default {
     name: "Footer",
@@ -39,7 +49,8 @@ export default {
         Jumbo,
         MainText,
         NewsCard,
-        Featured
+        Featured,
+        FeaturedSmall,
     },
     data(){
         return{
@@ -118,12 +129,35 @@ hr{
     width: 100px;
 }
 
+#sidebar-header{
+    margin-top: 0;
+}
+
+#sidebar-divider{
+    margin: 0
+}
+
 .cards-container{
     display: flex;
 }
 
 .col{
     flex-basis: 33%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-8{
+    flex-basis: calc(100% / 3 * 2);
+    padding: 10px;
+}
+
+.col-4{
+    flex-basis: calc(100% / 3);
+    padding: 0 30px;
 }
 
 </style>
