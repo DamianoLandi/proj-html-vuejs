@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .featured-small{
         background-image: url("../assets/img/featured_article_2_bg.jpg");
         height: 550px;

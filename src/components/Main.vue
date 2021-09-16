@@ -105,7 +105,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #news{
     margin-top: 100px;
 }
