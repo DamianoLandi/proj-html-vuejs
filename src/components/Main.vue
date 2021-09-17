@@ -60,6 +60,9 @@
             <div class="register">
                 <Register/>
             </div>
+            <div class="subscribe">
+                <Subscribe/>
+            </div>
         </section>
     </main>
 </template>
@@ -73,6 +76,7 @@ import FeaturedSmall from "./FeaturedSmall.vue"
 import CardSmall from "./CardSmall.vue"
 import ForumCard from "./ForumCard.vue"
 import Register from "./Register.vue"
+import Subscribe from "./Subscribe.vue"
 
 export default {
     name: "Footer",
@@ -85,6 +89,7 @@ export default {
         CardSmall,
         ForumCard,
         Register,
+        Subscribe,
     },
     data(){
         return{
@@ -284,6 +289,10 @@ ul{
 
 .register{
     height: 700px;
+}
+
+.subscribe{
+    height: 300px;
 }
 
 </style>
