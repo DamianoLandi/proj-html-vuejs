@@ -32,6 +32,9 @@
                     </div>
                 </div>
             </div>
+            <div id="to-top">
+                <a href="#"><i class="fas fa-chevron-up"></i></a>
+            </div>
         </section>
     </div>
 </template>
@@ -101,6 +104,10 @@ export default {
 
 /* Bottom Footer */
 
+#bottom-footer{
+    position: relative;
+}
+
 p{
     font-size: 13px;
     span{
@@ -130,6 +137,24 @@ p{
                 text-decoration: none;
             }
         }
+    }
+}
+
+/* To-Top Button */
+
+#to-top{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62676c;
+    border-radius: 3px 3px 0 0;
+    a{
+        color: white;
     }
 }
 
