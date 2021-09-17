@@ -41,5 +41,10 @@ body{
     width: 800px;
     margin: auto;
   }
+
+  .container-xs{
+    width: 500px;
+    margin: auto;
+  }
 }
 </style>

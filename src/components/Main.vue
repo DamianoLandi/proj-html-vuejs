@@ -56,6 +56,11 @@
                 <a href="#">Go to our forum &rarr;</a>
             </div>
         </section>
+        <section id="join">
+            <div class="register">
+                <Register/>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -67,6 +72,7 @@ import Featured from "./Featured.vue"
 import FeaturedSmall from "./FeaturedSmall.vue"
 import CardSmall from "./CardSmall.vue"
 import ForumCard from "./ForumCard.vue"
+import Register from "./Register.vue"
 
 export default {
     name: "Footer",
@@ -77,7 +83,8 @@ export default {
         Featured,
         FeaturedSmall,
         CardSmall,
-        ForumCard
+        ForumCard,
+        Register,
     },
     data(){
         return{
@@ -273,6 +280,10 @@ ul{
     margin-top: 0;
     padding-top: 100px;
     background-color: #F2F2F2;
+}
+
+.register{
+    height: 700px;
 }
 
 </style>
