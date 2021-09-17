@@ -50,8 +50,25 @@ body{
   margin: auto;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
 .text-gray{
   color: #62676c;
+}
+
+.col-8{
+    flex-basis: calc(100% / 3 * 2);
+}
+
+.col-4{
+    flex-basis: calc(100% / 3);
+}
+
+.col-3{
+    flex-basis: calc(100% / 4);
 }
 
 </style>

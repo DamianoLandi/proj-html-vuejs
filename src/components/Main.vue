@@ -1,9 +1,12 @@
 <template>
     <main>
+        <!-- Jumbotron -->
         <section id="jumbo">
             <Jumbo/>
             <MainText/>
         </section>
+
+        <!-- Articoli & News -->
         <section id="news">
             <div class="section-header">
                 <h3>Phasellus eget metus</h3>
@@ -41,6 +44,8 @@
                 <a href="#">Read our blog &rarr;</a>
             </div>
         </section>
+
+        <!-- Forum Links -->
         <section id="forums">
             <div class="section-header">
                 <h3>Phasellus eget metus</h3>
@@ -56,6 +61,8 @@
                 <a href="#">Go to our forum &rarr;</a>
             </div>
         </section>
+
+        <!-- Subscriptions -->
         <section id="join">
             <div class="register">
                 <Register/>
@@ -198,10 +205,52 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+/* General Layout */
+
 #news{
     margin-top: 100px;
 }
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 33%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-8{
+    padding: 10px;
+}
+
+.col-4{
+    padding: 0 30px;
+}
+
+#forums{
+    margin-top: 0;
+    padding-top: 100px;
+    background-color: #F2F2F2;
+}
+
+.register{
+    height: 700px;
+}
+
+.subscribe{
+    height: 300px;
+}
+
+/* Section Header */
 
 .section-header{
     text-align: center;
@@ -230,39 +279,9 @@ hr{
     margin: 0
 }
 
-.cards-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.col{
-    flex-basis: 33%;
-}
 
-.row{
-    display: flex;
-    justify-content: space-between;
-}
-
-.col-8{
-    flex-basis: calc(100% / 3 * 2);
-    padding: 10px;
-}
-
-.col-4{
-    flex-basis: calc(100% / 3);
-    padding: 0 30px;
-}
-
-.col-3{
-    flex-basis: calc(100% / 4);
-}
-
-ul{
-    list-style-type: none;
-    padding: 0;
-}
+/* Section Footer */
 
 .section-footer{
     background-color: #25A9BD;
@@ -281,18 +300,5 @@ ul{
     font-weight: 600;
 }
 
-#forums{
-    margin-top: 0;
-    padding-top: 100px;
-    background-color: #F2F2F2;
-}
-
-.register{
-    height: 700px;
-}
-
-.subscribe{
-    height: 300px;
-}
 
 </style>

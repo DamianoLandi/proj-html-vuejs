@@ -14,35 +14,34 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .register-bg{
         height: 100%;
         background-image: url("../assets/img/join_now_cta_bg.jpg");
         background-size: cover;
         background-position: center;
         color: white;
+        .container-xs{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h2{
+                font-size: 45px;
+            }
+
+            a{
+                color: white;
+                background-color: #202325;
+                border: 1px solid #202325;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
     }
 
-    .container-xs{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    h2{
-        font-size: 45px;
-    }
-
-    a{
-        color: white;
-        background-color: #202325;
-        border: 1px solid #202325;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        cursor: pointer;
-        text-decoration: none;
-    }
 </style>

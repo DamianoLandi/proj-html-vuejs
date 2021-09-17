@@ -50,46 +50,44 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+    /* Style */
+
     header{
         height: 80px;
         background-color: #4A4A4A;
+        .container{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                flex-basis: 50%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    position: relative;
+                    color: white;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                    button{
+                        color: white;
+                        background-color: #202325;
+                        border-color: transparent;
+                        text-transform: uppercase;
+                        padding: 7px 15px;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
     }
 
-    .container{
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    ul{
-        flex-basis: 50%;
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    li{
-        position: relative;
-    }
-
-    li, li a{
-        color: white;
-    }
-
-    li a{
-        text-decoration: none;
-    }
-
-    button{
-        color: white;
-        background-color: #202325;
-        border: 1px solid #202325;
-        text-transform: uppercase;
-        padding: 7px 15px;
-        cursor: pointer;
-    }
+    /* Hover Effect */
 
     .active{
         height: 20px;

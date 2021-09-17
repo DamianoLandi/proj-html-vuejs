@@ -17,16 +17,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .card{
         padding: 15px;
+        img{
+            width: 100%;
+        }
     }
 
-    img{
-        width: 100%;
-    }
-
-    .text-gray{
-        color: #62676c;
-    }
 </style>

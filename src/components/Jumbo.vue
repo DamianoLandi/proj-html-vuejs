@@ -14,39 +14,38 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .jumbo{
         height: 870px;
         background-image: url("../assets/img/home_slider_bg.jpg");
-    }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            color: white;
+            h1{
+                font-size: 135px;
+                margin: 0;
+            }
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        color: white;
-    }
-
-    h1{
-        font-size: 135px;
-        margin: 0;
-    }
-
-    p{
-        font-size: 20px;
-    }
+            p{
+                font-size: 20px;
+            }
     
-    a{
-        color: white;
-        text-decoration: none;
-        display: inline-block;
-        background-color: #4A4A4A;
-        width: 150px;
-        text-align: center;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 600;
+            a{
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                background-color: #4A4A4A;
+                width: 150px;
+                text-align: center;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
     }
+
 </style>

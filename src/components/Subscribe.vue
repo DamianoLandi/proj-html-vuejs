@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .container-subscribe{
         height: 100%;
         background-color: #F2F2F2;
@@ -22,25 +22,24 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .input-container{
+            width: 550px;
+            display: flex;
+            justify-content: space-between;
+            input{
+                padding: 10px 180px 10px 10px;
+                border: 1px solid lightgray;
+            }
+
+            button{
+                color: white;
+                text-transform: uppercase;
+                background-color: #25A9BD;
+                padding: 10px 60px;
+                border-color: transparent;
+                font-weight: 600;
+            }
+        }
     }
 
-    .input-container{
-        width: 550px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    input{
-        padding: 10px 180px 10px 10px;
-        border: 1px solid lightgray;
-    }
-
-    button{
-        color: white;
-        text-transform: uppercase;
-        background-color: #25A9BD;
-        padding: 10px 60px;
-        border-color: transparent;
-        font-weight: 600;
-    }
 </style>
