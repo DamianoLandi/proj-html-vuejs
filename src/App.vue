@@ -31,20 +31,27 @@ body{
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  
-  .container{
-    width: 1200px;
-    margin: auto;
-  }
-
-  .container-small{
-    width: 800px;
-    margin: auto;
-  }
-
-  .container-xs{
-    width: 500px;
-    margin: auto;
-  }
 }
+
+/* Utils */
+
+.container{
+  width: 1200px;
+  margin: auto;
+}
+
+.container-small{
+  width: 800px;
+  margin: auto;
+}
+
+.container-xs{
+  width: 500px;
+  margin: auto;
+}
+
+.text-gray{
+  color: #62676c;
+}
+
 </style>

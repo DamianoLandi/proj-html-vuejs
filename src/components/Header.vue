@@ -1,5 +1,7 @@
 <template>
     <header>
+
+        <!-- Logo & Navbar -->
         <div class="container">
             <img src="../assets/img/logo.png" alt="Logo" id="logo">
             <ul>
@@ -47,7 +49,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     header{
         height: 80px;
         background-color: #4A4A4A;

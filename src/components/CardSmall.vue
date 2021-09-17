@@ -1,4 +1,6 @@
 <template>
+    <!-- Template delle cards per gli articoli in evidenza -->
+
     <div class="card">
         <img :src="require('@/assets/img/' + item.imgUrl)" alt="img">
         <div>
@@ -17,23 +19,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .card{
         display: flex;
         max-height: 165px;
-    }
-
-    img{
-        width: 200px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-    }
-
-    h3{
-        font-size: 14px;
-    }
-
-    .text-gray{
-        color: #62676c;
+        img{
+            width: 200px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        h3{
+            font-size: 14px;
+        }
     }
 </style>

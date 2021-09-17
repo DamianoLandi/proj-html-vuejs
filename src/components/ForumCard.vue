@@ -1,4 +1,5 @@
 <template>
+    <!-- Template delle cards per le Forum Sections-->
     <div class="card">
         <div class="icon-bg">
             <i :class="item.icon"></i>
@@ -16,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .card{
         display: flex;
         flex-direction: column;
@@ -29,20 +30,18 @@ export default {
         padding: 25px 0;
         cursor: pointer;
         background-color: #fff;
-    }
-
-    .icon-bg{
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-color: #fc8c5e;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    i{
-        font-size: 35px;
-        color: white;
+        .icon-bg{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #fc8c5e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 35px;
+                color: white;
+            }
+        }
     }
 </style>

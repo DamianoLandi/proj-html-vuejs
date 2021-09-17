@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .featured-small{
         background-image: url("../assets/img/featured_article_2_bg.jpg");
         height: 474px;
@@ -25,27 +25,26 @@ export default {
         flex-direction: column;
         justify-content: center;
         padding: 0 50px;
-    }
+        h3{
+            text-transform: uppercase;
+            font-size: 15px;
+        }
 
-    h3{
-        text-transform: uppercase;
-        font-size: 15px;
-    }
+        h2{
+            font-size: 35px;
+        }
 
-    h2{
-        font-size: 35px;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-        display: inline-block;
-        background-color: #25A9BD;
-        width: 150px;
-        text-align: center;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 600;
+        a{
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            background-color: #25A9BD;
+            width: 150px;
+            text-align: center;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+        }
     }
 </style>

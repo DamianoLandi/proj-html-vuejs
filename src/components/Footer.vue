@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- Footer Links -->
         <section id="links">
             <div class="container row">
                 <div class="col-3">
@@ -11,6 +12,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Copyright & Social Media -->
         <section id="bottom-footer">
             <div class="container row bf-row">
                 <p class="text-gray"> &#169; Copyright 2012 - 2020 | Avada Theme by <span>Theme Fusion</span> | All Rights Reserved | Powered by <span>WordPress</span></p>
@@ -77,7 +80,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+/* Links */
 
 #links{
     padding: 50px 0;
@@ -94,17 +99,41 @@ export default {
     margin-top: 75px;
 }
 
-.text-gray{
-    color: #62676c;
-}
-
-span{
-    color: #000;
-}
+/* Bottom Footer */
 
 p{
     font-size: 13px;
+    span{
+        color: #000;
+    }
 }
+
+
+.bf-row{
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    .icons-container{
+        flex-basis: 20%;
+        display: flex;
+        justify-content: space-between;
+        .icon-bg{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Icons BG-Color */
 
 .bg-darkblue{
     background-color: #4562b0;
@@ -122,31 +151,4 @@ p{
     background-color: #951a0c;
 }
 
-.icon-bg{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.bf-row{
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-}
-
-.icons-container{
-    flex-basis: 20%;
-    display: flex;
-    justify-content: space-between;
-}
 </style>

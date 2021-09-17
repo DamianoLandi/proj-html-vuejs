@@ -1,4 +1,5 @@
 <template>
+    <!-- Articolo in evidenza   -->
     <div class="featured">
         <div class="container-small">
             <h3>Featured Article</h3>
@@ -15,7 +16,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .featured{
         background-image: url("../assets/img/featured_article_1_bg.jpg");
         height: 550px;
@@ -23,34 +24,33 @@ export default {
         background-size: cover;
         color: white;
         margin-bottom: 50px;
+        .container-small{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3{
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+
+            h2{
+                font-size: 35px;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                background-color: #25A9BD;
+                width: 150px;
+                text-align: center;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
     }
 
-    .container-small{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    h3{
-        text-transform: uppercase;
-        font-size: 15px;
-    }
-
-    h2{
-        font-size: 35px;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-        display: inline-block;
-        background-color: #25A9BD;
-        width: 150px;
-        text-align: center;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 600;
-    }
 </style>

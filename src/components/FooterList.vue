@@ -16,26 +16,24 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
     ul{
         padding: 0;
         list-style-type: none;
+        li{
+            border-bottom: 1px solid lightgray;
+            line-height: 35px;
+            margin-left: 7px;
+            text-indent: -7px;
+            a{
+                color: black;
+                text-decoration: none;
+                i{
+                font-size: 10px;
+                }
+            }
+        }
     }
 
-    li{
-        border-bottom: 1px solid lightgray;
-        line-height: 35px;
-        margin-left: 7px;
-        text-indent: -7px;
-    }
-
-    a{
-        color: black;
-        text-decoration: none;
-    }
-
-    i{
-        font-size: 10px;
-    }
 </style>
