@@ -96,7 +96,7 @@ export default {
         position: absolute;
         transform: rotate(45deg);
         left: 35%;
-        top: 45px;
+        top: 35px;
         display: none;
     }
 
